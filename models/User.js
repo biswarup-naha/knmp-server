@@ -10,7 +10,6 @@ const beneficiarySchema=new mongoose.Schema({
     district:{type:String, required: true}
 })
 
-
 const beneficiary= mongoose.model('Beneficiary',beneficiarySchema);
 
 module.exports = beneficiary;

@@ -22,7 +22,7 @@ app.use('/user', user);
 lurl="mongodb://localhost:27017/rehabCenterDB"
 curl="mongodb+srv://nmdb:789456123@cluster0.nynylij.mongodb.net/?retryWrites=true&w=majority"
 
-mongoose.connect(curl)
+mongoose.connect(lurl)
   .then(() => {
     console.log('Connected to MongoDB');
     app.listen(PORT, () => {
